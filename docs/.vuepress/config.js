@@ -24,8 +24,31 @@ module.exports = {
         logo: '',
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Guide', link: '/guide/' },
-            { text: 'External', link: 'https://google.com' },
+            { text: 'android', link: '/android/android-overview.md',
+                items: [
+                    { text: 'android-overview', link: '/android/android-overview.md'},
+                    { text: '0-1android', link: '/android/0-1android/01认识Android.md'}
+                ]
+            },
+            { text: 'html', link: '/html-overview.md' ,
+                items: [
+                    { text: 'html-overview', link: '/html/html-overview.md'},
+                    { text: '0-1vue', link: '/html/0-1vue/01认识vue.md'}
+                ]
+            },
+            { text: 'ios', link: '/ios/ios-overview.md',
+                items: [
+                    { text: 'ios-overview', link: '/ios/ios-overview.md'},
+                    { text: '0-1ios', link: '/ios/0-1ios/01认识Ios.md'}
+                ]
+            },
+            { text: 'java', link: '/java/java-overview.md',
+                items: [
+                    { text: 'java-overview', link: '/java/java-overview.md'},
+                    { text: '0-1java', link: '/java/0-1java/01认识Java.md'}
+                ]
+            }
+            // { text: 'google', link: 'https://google.com' },
             // { text: 'External', link: 'https://google.com', target:'_self', rel:'' },
             // { text: 'Guide', link: '/guide/', target:'_blank' }
             // {
@@ -37,25 +60,29 @@ module.exports = {
             //     ]
             // }
         ],
+        //自动
         sidebar: {
             sidebar: 'auto'
         },
-        // [// 没有自动左侧菜单的会使用此菜单
-            // '/',
-            // '/page-a',
-            // ['/middleware/mysql', 'Explicit link text']
-            //侧边栏分组，侧边栏的每个子组默认是可折叠的，你可以设置 collapsable: false 来让一个组永远都是展开状态。
-            // {
-            //     title: 'Group 1',   // 必要的
-            //     path: '/foo/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-            //     collapsable: false, // 可选的, 默认值是 true,
-            //     sidebarDepth: 1,    // 可选的, 默认值是 1
-            //     children: [
-            //         '/'
-            //     ]
-            // },
+        // 没有自动左侧菜单的会使用此菜单
+        // sidebar: [
+        //     '/',
+        //     '/android/android-overview',
+        //     '/html/html-overview',
+        //     '/ios/ios-overview',
+        //     '/java/java-overview',
+        //     // 侧边栏分组，侧边栏的每个子组默认是可折叠的，你可以设置 collapsable: false 来让一个组永远都是展开状态。
+        //     // {
+        //     //     title: 'Group 1',   // 必要的
+        //     //     path: '/foo/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        //     //     collapsable: false, // 可选的, 默认值是 true,
+        //     //     sidebarDepth: 1,    // 可选的, 默认值是 1
+        //     //     children: [
+        //     //         '/'
+        //     //     ]
+        //     // },
         // ],
-        // displayAllHeaders: true, // 显示所有页面的标题链接,默认值：false
+        displayAllHeaders: true, // 显示所有页面的标题链接,默认值：false
         lastUpdated: 'Last Updated', // string | boolean
         smoothScroll: true, //页面滚动
     },
