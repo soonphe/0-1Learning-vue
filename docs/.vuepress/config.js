@@ -94,11 +94,12 @@ module.exports = {
             lang: 'zh-CN',
             title: '0-1Learning',
             description: '0-1Learning'
-        },
-        '/en/': {
-            lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
-            title: 'VuePress',
-            description: 'Vue-powered Static Site Generator'
         }
+        // ,
+        // '/en/': {
+        //     lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
+        //     title: 'VuePress',
+        //     description: 'Vue-powered Static Site Generator'
+        // }
     }
 }
